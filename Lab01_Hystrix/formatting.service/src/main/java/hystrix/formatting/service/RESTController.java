@@ -1,6 +1,5 @@
 package hystrix.formatting.service;
 
-import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,7 +18,7 @@ public class RESTController {
         
         RestTemplate restTemplate = new RestTemplate();
         
-		return restTemplate.postForObject("http://localhost:8080", message, String.class);
+		return restTemplate.postForObject("http://localhost:8080/sendMessage/", message, String.class);
     }
 	
 	public String defaultMessageResponse( Message message ) {

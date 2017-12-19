@@ -96,5 +96,9 @@ public class Message {
 	public void setTimeFrame(String timeFrame) {
 		this.timeFrame = timeFrame;
 	}
+	
+	public String toString() {
+		return String.format( "Message[id=%s, body=%s, time frame=%s]", this.id, this.messageBody, this.timeFrame );
+	}
 		
 }
