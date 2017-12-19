@@ -1,8 +1,13 @@
-#Lab01_Hystrix
+# Lab01_Hystrix
 
-##Instructions:
+## Instructions:
+
 1.
+
 2.
+
 3.
+
 4.
+
 5.
