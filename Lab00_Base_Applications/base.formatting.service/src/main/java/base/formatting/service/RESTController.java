@@ -17,9 +17,4 @@ public class RESTController {
         
 		return restTemplate.postForObject("http://localhost:8080/sendMessage/", message, String.class);
     }
-	
-	public String defaultMessageResponse( Message message ) {
-		return "Send of " + message.toString() + " to formatter did not work.";
-	}
-	
 }
