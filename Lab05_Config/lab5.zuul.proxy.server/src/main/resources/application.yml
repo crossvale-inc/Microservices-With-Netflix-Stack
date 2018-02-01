@@ -1,0 +1,24 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: zuul-proxy-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+zuul:
+    prefix: /api
+    routes:
+        uaa:
+          path: /uaa/**
+          sensitiveHeaders:
+          serviceId: auth-server
+        formatter:
+            path: /formatter/
+            sensitiveHeaders:
+            serviceId: formatting-service
+        sendMessage:
+            path: /sendMessage/
+            sensitiveHeaders:
+            serviceId: scheduling-service
