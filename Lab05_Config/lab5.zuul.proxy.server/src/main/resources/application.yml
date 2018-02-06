@@ -22,3 +22,7 @@ zuul:
             path: /sendMessage/
             sensitiveHeaders:
             serviceId: scheduling-service
+        secretVal:
+            path: /getSecretVal/
+            sensitiveHeaders:
+            serviceId: scheduling-service            

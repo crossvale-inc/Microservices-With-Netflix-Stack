@@ -22,6 +22,9 @@ public class RESTController {
 	@Value("${return-stored-message:Oops, that didnt work}")
 	private String returnStoredMessage;
 	
+	@Value("${my.secret.val}")
+	private String secretVal;
+		
 	@RequestMapping(value = "/sendMessage/", method = RequestMethod.POST)
     public String returnMessage(@RequestBody Message message) {
       
@@ -43,4 +46,10 @@ public class RESTController {
     	
     	return returnMessageString;
     }	
+
+	@RequestMapping(value = "/getSecretVal/", method = RequestMethod.GET)
+    public String returnCrypto() {
+		return this.secretVal;
+	}
+      	
 }
