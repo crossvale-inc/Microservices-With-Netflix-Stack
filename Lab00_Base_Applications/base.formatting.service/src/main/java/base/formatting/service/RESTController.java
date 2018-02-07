@@ -15,6 +15,6 @@ public class RESTController {
         
         RestTemplate restTemplate = new RestTemplate();
         
-		return restTemplate.postForObject("http://localhost:8080/sendMessage/", message, String.class);
+		return restTemplate.postForObject("http://microservices-with-netflix-stack-test-microservices.apps.crossvale-ocp.com/sendMessage/", message, String.class);
     }
 }
