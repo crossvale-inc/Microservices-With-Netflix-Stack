@@ -1,12 +1,12 @@
 server:
-  port: 8765
+  port: 8080
 spring:
   application:
     name: zuul-proxy-service
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/
+      defaultZone: http://eureka-server-test-microservices-config.192.168.99.100.nip.io/eureka
 zuul:
     prefix: /api
     routes:
