@@ -22,7 +22,7 @@ public class RESTController {
 	@Value("${return-stored-message:Oops, that didnt work}")
 	private String returnStoredMessage;
 	
-	@Value("${my.secret.val}")
+	@Value("${my.secret.val:fixed it}")
 	private String secretVal;
 		
 	@RequestMapping(value = "/sendMessage/", method = RequestMethod.POST)
