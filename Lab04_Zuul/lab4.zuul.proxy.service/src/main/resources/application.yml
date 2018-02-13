@@ -6,7 +6,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://eureka-server-test-microservices-config.192.168.99.100.nip.io/eureka
+      defaultZone: http://eureka-server-test-microservices-zuul.apps.crossvale-ocp.com/eureka
 zuul:
     prefix: /api
     routes:
