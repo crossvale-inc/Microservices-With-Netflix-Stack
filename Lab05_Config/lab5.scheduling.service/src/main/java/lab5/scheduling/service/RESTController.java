@@ -16,10 +16,10 @@ public class RESTController {
 	@Autowired
 	private Environment env;
     
-	@Value("${return-sent-message:Oops, that didnt work}")
+	@Value("${return-sent-message:Config Server Fetch Failed!}")
 	private String returnSentMessage;
 
-	@Value("${return-stored-message:Oops, that didnt work}")
+	@Value("${return-stored-message:Config Server Fetch Failed!}")
 	private String returnStoredMessage;
 	
 	@Value("${my.secret.val:fixed it}")
