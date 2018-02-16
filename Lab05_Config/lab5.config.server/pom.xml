@@ -43,6 +43,18 @@
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-parent</artifactId>
+				<version>Camden.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+<!-- 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
 				<version>Edgware.RELEASE</version>
 				<type>pom</type>
@@ -50,7 +62,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-
+ -->
 	<build>
 		<plugins>
 			<plugin>
