@@ -21,7 +21,7 @@
 		    <artifactId>spring-cloud-starter-zuul</artifactId>
 		</dependency>
 	</dependencies>
-
+<!-- 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -33,7 +33,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-<!-- 
+ -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -45,7 +45,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>	
- -->	
+
 	<build>
 		<plugins>
 			<plugin>
