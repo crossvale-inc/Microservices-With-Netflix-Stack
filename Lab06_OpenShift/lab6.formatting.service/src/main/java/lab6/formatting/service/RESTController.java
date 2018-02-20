@@ -14,6 +14,6 @@ public class RESTController {
         message.convertBody();
         
         RestTemplate restTemplate = new RestTemplate();
-		return restTemplate.postForObject("scheduling-service/sendMessage/", message, String.class);
+		return restTemplate.postForEntity("http://scheduling-service/sendMessage/", message, String.class).getBody();
     }
 }
