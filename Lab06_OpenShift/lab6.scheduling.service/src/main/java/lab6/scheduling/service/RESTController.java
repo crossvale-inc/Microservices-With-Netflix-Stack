@@ -27,9 +27,9 @@ public class RESTController {
     	else {
     		returnMessageString = "Message Stored for Later Send";
     	}
-    	String OCMessage = env.getProperty("special.message");
-    	String path = env.getProperty("server.port");
-    	returnMessageString = OCMessage + returnMessageString + " using Server Port=" + path;
+    	String OCMessage = env.getProperty("SPECIAL_MESSAGE");
+    	String pod = env.getProperty("HOSTNAME");
+    	returnMessageString = OCMessage + " " + returnMessageString + " using Pod=" + pod;
     	return returnMessageString;
     }	
 }
