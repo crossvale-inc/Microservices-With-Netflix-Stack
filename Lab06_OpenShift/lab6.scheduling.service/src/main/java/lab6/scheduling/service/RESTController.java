@@ -29,7 +29,7 @@ public class RESTController {
     	}
     	String OCMessage = env.getProperty("SPECIAL_MESSAGE");
     	String pod = env.getProperty("HOSTNAME");
-    	returnMessageString = OCMessage + " " + returnMessageString + " using Pod=" + pod;
+    	returnMessageString = OCMessage + returnMessageString + " using Pod=" + pod;
     	return returnMessageString;
     }	
 }
